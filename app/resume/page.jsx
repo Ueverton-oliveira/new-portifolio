@@ -117,7 +117,7 @@ const education = {
 
 const skills = {
   title: "My Skills",
-  description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+  description: "",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -199,7 +199,7 @@ const Resume = () => {
       <div className="container mx-auto">
         <Tabs defaultChecked="experience" className="flex flex-col xl:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experice</TabsTrigger>
+            <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
@@ -239,8 +239,9 @@ const Resume = () => {
                         <li key={index}
                             className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start">
                           <span className="text-accent">{item.duration}</span>
-                          <h3
-                            className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.degree}
+                          </h3>
                           <div className="flex items-center gap-3">
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.institution}</p>
@@ -255,7 +256,7 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4x-l font-bold">
+                  <h3 className="text-4xl font-bold">
                     {skills.title}
                   </h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
