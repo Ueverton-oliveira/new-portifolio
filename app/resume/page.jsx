@@ -27,7 +27,12 @@ import {motion} from "framer-motion";
 
 const about = {
   title: "About",
-  description: "About Me About Me vAbout Me About Me About Me About Me",
+  description: "I am a seasoned Full Stack Developer with over 5 years of experience specializing\n" +
+    "in crafting robust, scalable, and secure features. My expertise lies in writing clean,\n" +
+    "maintainable, and efficient code, ensuring seamless functionality across applications.\n" +
+    "Proficient in all phases of the development lifecycle, I am dedicated to driving the\n" +
+    "continuous adoption and integration of cutting-edge technologies to enhance product\n" +
+    "development.",
   info: [
     {
       fieldName: "Name",
@@ -67,7 +72,7 @@ const about = {
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
-  description: "Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+  description: "",
   items: [
     {
       company: "Caiena Tecnology",
@@ -76,7 +81,7 @@ const experience = {
     },
     {
       company: "CDD IT - Service Innovation",
-      position: "Freelance Web Developer",
+      position: "Freelance Full Stack Developer",
       duration: "2021 - 2022"
     },
     {
